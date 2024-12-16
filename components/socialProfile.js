@@ -20,7 +20,7 @@ class SocialProfile extends HTMLElement {
                 align-items: center;
                 background-color: #f4f4f4;
                 padding: 25px;
-                border-radius: 12px;
+                border-radius: 12px; 
                 box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
                 width: 320px;
                 text-align: center;

@@ -18,7 +18,7 @@ class HeaderComponent extends HTMLElement {
                 padding: 2rem 3rem; /* Espaciado interno */
                 font-family: 'Poppins', Arial, sans-serif; /* Fuente personalizada */
                 box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
-                position: relative; /* Posicionamiento relativo para control adicional */
+                position: relative; /* Posicionamiento relativo para control adicional */ 
             }
 
             /* Estilo para el título principal (h1) */

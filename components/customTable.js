@@ -13,7 +13,7 @@ class CustomTable extends HTMLElement {
         // Crear los estilos del componente
         const style = document.createElement('style');
         style.textContent = `
-            /* Estilos para el contenedor de la tabla */
+            /* Estilos para el contenedor de la tabla */ 
             .table-container {
                 width: 100%;
                 overflow-x: auto;

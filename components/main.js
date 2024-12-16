@@ -20,7 +20,7 @@ class MainComponent extends HTMLElement {
         shadow.appendChild(style);
 
         // Estructura HTML del componente MainComponent
-        shadow.innerHTML += `
+        shadow.innerHTML += ` 
             <main>
                 <slot></slot> <!-- El slot permite insertar contenido personalizado dentro del componente -->
             </main>

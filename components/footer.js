@@ -13,7 +13,7 @@ class FooterComponent extends HTMLElement {
             /* Estilo para el footer */
             footer {
                 background: linear-gradient(90deg, #3a3a3a, #595959); /* Fondo degradado */
-                color: white; /* Color de texto blanco */
+                color: white; /* Color de texto blanco */ 
                 text-align: center; /* Alineación centrada del texto */
                 padding: 1rem 0; /* Espaciado interno */
                 font-family: 'Poppins', Arial, sans-serif; /* Fuente personalizada */

@@ -18,7 +18,7 @@ class CustomGallery extends HTMLElement {
                 display: grid;
                 grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
                 gap: 1rem;
-                margin: 1rem;
+                margin: 1rem; 
                 padding: 10px;
                 box-sizing: border-box;
             }
