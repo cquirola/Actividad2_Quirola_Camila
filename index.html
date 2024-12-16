@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación Web</title> <!-- El título de la pestaña en el navegador -->
+
+    <!-- Importación de archivos JS como módulos (definidos en la carpeta components) -->
+    <script type="module" src="./components/header.js"></script>
+    <script type="module" src="./components/footer.js"></script>
+    <script type="module" src="./components/main.js"></script>
+    <script type="module" src="./components/menu.js"></script>
+    <script type="module" src="./components/socialProfile.js"></script>
+    <script type="module" src="./components/customTable.js"></script>
+    <script type="module" src="./components/gallery.js"></script>
+    
+    <!-- Estilos adicionales para la página -->
+    <style>
+        /* Estilo del contenedor principal del mensaje de bienvenida */
+        #home {
+            text-align: center; 
+            padding: 2rem; 
+        }
+
+        /* Estilo específico para el encabezado h1 dentro de #home */
+        #home h1 {
+            font-size: 2.5rem; 
+            color: #4a90e2; 
+            font-weight: 700; 
+            margin-bottom: 1rem; 
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); 
+        }
+    </style>
+</head>
+<body>
+    <!-- Componente del encabezado de la página -->
+    <app-header></app-header>
+
+    <!-- Menú de navegación personalizado -->
+    <custom-menu></custom-menu>
+
+    <!-- Contenedor principal de la página -->
+    <app-main>
+        <!-- Sección de bienvenida, visible solo en la página principal -->
+        <div id="home">
+            <h1>Bienvenido a la aplicación</h1> <!-- Título de bienvenida -->
+            <p>Navega por la página</p> <!-- Texto adicional -->
+        </div>
+
+        <!-- Sección de perfil de usuario (oculta por defecto) -->
+        <div id="profile" hidden>
+            <social-profile name="Camila Quirola" avatar="./img/avatar3.png" description="Estudiante de TI" ></social-profile>
+        </div>
+
+        <!-- Sección de tabla (oculta por defecto) -->
+        <div id="table" hidden>
+            <custom-table endpoint="https://jsonplaceholder.typicode.com/users"></custom-table>
+        </div>
+
+        <!-- Sección de galería (oculta por defecto) -->
+        <div id="gallery" hidden>
+            <custom-gallery endpoint="https://pokeapi.co/api/v2/pokemon?limit=50"></custom-gallery>
+        </div>
+    </app-main>
+    
+    <!-- Componente de pie de página -->
+    <app-footer></app-footer>
+</body>
+</html>
